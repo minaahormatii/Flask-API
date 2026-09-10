@@ -12,7 +12,7 @@ def create_product():
     product['name'] = post_data['name']
     product['description'] = post_data['description']
     product['price'] = float(post_data['price'])
-    product['active'] = post_data['active']
+    product['active'] = bool(post_data['active'])
 
     product_records.append(product)
 
